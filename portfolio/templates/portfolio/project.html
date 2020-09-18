@@ -1,6 +1,6 @@
 {% extends "portfolio/base.html" %}
 
-{% block project  %}
+{% block projects %}
 <div class="container-fluid" id="workAnchor" style="height: 900px; background-color: white;">
     <div><h1 class="text-center text-color-red" style="padding: 70px;">
         These are some of my projects</h1></div>
@@ -9,8 +9,8 @@
     <div class="card-deck">
         <div class="card" style="background-color:white;">
             <div class="col pl-5">
-            <img class="card-img-top" src="{% static "assets/img/coding.png" %}" alt="">
-        </div>
+           <img class="card-img-top" src="{% static "assets/img/coding.png" %}" alt=""> 
+            </div>
         <div class="card-footer text-center bg-dark" style="font-size: x-large; font-style:oblique">
             <a  href="% static "https://archimedessena.github.io" %}">Coding School</a>
         </div>
@@ -36,4 +36,6 @@
 </div>
 </div>  
  
-{% endblock project %}
+{% endblock projects %} 
+
+

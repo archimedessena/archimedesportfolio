@@ -12,4 +12,4 @@ def about(request):
 
 
 def project(request):
-     return render(request, 'portfolio/project.html')
+    return render(request, 'portfolio/project.html')
