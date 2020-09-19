@@ -13,3 +13,14 @@ def about(request):
 
 def project(request):
     return render(request, 'portfolio/project.html')
+
+
+
+def contact(request):
+    return render(request, 'portfolio/contact.html')
+
+
+
+
+def blog(request):
+    return render(request, 'portfolio/blog.html')

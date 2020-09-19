@@ -1,11 +1,13 @@
 {% extends "portfolio/base.html" %}
+{% load static %}
 
 {% block projects %}
 <div class="container-fluid" id="workAnchor" style="height: 900px; background-color: white;">
     <div><h1 class="text-center text-color-red" style="padding: 70px;">
         These are some of my projects</h1></div>
      
-
+    <div class="container-fluid row">
+        <div class="col-xs-8">
     <div class="card-deck">
         <div class="card" style="background-color:white;">
             <div class="col pl-5">
@@ -15,7 +17,14 @@
             <a  href="% static "https://archimedessena.github.io" %}">Coding School</a>
         </div>
     </div>
-
+    <div class="col-xs-4">
+        <h2>This is startup project a started sometime ago.</h2>
+    </div>
+</div>
+</div>
+ 
+<div class="container-fluid row">
+<div class="col-xs-8">
     <div class="card" style="background-color:white;">
         <div class="col">
         <img class="card-img-top" src="{% static "assets/img/theroyalfamilyschool1.png" %}" alt="">
@@ -23,9 +32,17 @@
     <div class="card-footer text-center bg-dark" style="font-size: x-large; font-style:oblique">
         <a  href="{% static "https://theroyalfamilyschool.github.io" %}">The Royal Family School</a>
     </div>
+
+    <div class="col-xs-4">
+        <h2>The Royal Family Family School, approached me for a website and I did exactly what they want for them. And at the end of the day they are happy with my work.</h2>
+    </div>
+</div>
+
 </div>
 
 
+<div class="row">
+<div class="col-xs-4">
 <div class="card" style="background-color: white;">
     <div class="col">
     <img class="card-img-top" src="{% static "assets/img/love.png" %}" alt="">
@@ -34,7 +51,12 @@
         <a href="{% static "https://loveexperience.github.io" %}">Love Experience</a>
 </div>
 </div>
-</div>  
+</div> 
+</div>
+</div>
+
+
+
  
 {% endblock projects %} 
 
