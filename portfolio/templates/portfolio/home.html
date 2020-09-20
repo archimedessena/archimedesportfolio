@@ -1,16 +1,68 @@
 {% extends "portfolio/base.html" %}
 {% load static %}
 
+<style>
+    .img{
+        border-radius: 50%;
+    }
+    button{
+        background-color: blue;
+        
+    }
+    .btn{
+        border-radius: 50%;
+    }
+</style>
+
 {% block name %}
 
-<div class="container-fluid bg-dark" style=" height:600px; border-style:groove;  border-radius: 50px;">
+<!--<div class="container-fluid bg-dark" style=" height:600px; border-style:groove;  border-radius: 50px;">
     <div class="container-fluid bg-dark" id="aboutAnchor" style=" height:600px; width: 600px;">
         <h1 class="text-center" style="padding-top:250px; color:white">Hi, I am Archimedes</h1>
         <h3 class="text-center" style="padding-top:20px; color:azure;">a <strong>web developer</strong></h3>
     </div> 
+    </div> -->
+
+
+    <div class="container-fluid bg-light mt-0">
+        <div class="row pt-5">
+        <div class="col-xs-8">
+     <h1 class="text-center black-text pt-5" style="font-size: bold; padding-left: 75px;">Hi, I’m Archimedes. Nice to meet you.</h1>
+     <h4 class="text-center black-text pb-5" style="padding-left: 70px;"><br>I am a Freelance Full Stack Developer.
+    <br>Since beginning my journey as a <br>freelance full stack developer <br>for nearly 2 years ago, <br>
+    I've done remote work for agencies, and <br>collaborated with talented people to create <br>digital products for both business and consumer use. <br>I'm quietly confident, naturally curious, and <br>perpetually working on improving problem at a time.
+    <div>
+    <button class="btn btn-center bg-dark ml-5 mt-5" style="border-radius: 50%; border-style: hidden; border-width: 3px;">
+        <a class="white-text" style="font-size: 20px;" href="#">My Projects </a>
+    </button>
+</div>
+    </h4>
+   
+    </div>
+    
+    <div class="col-xs-8 img-responsive pl-5"">
+        <img class="img-responsive" class="img" style="padding-left: 300px; padding-top: 3px;" src="{% static "assets/img/arc.jpg" %}" alt="">
+    </div>
+    
+    </div>
+    
     </div>
 
-
+    <div class="container-fluid bg-white">
+        <h1>PROJECTS</h1>
+        <div class="row">
+            <div class="col-xs-4">
+            <div class="card-deck">
+                <div class="card" style="background-color:white;">
+                    <div class="col pl-5">
+                   <img class="card-img-top" src="{% static "assets/img/coding.png" %}" alt=""> 
+                    </div>
+                <div class="card-footer text-center bg-dark" style="font-size: x-large; font-style:oblique">
+                    <a  href="% static "https://archimedessena.github.io" %}">Coding School</a>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock name%}
      
 <!---Start of main-->

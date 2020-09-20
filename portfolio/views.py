@@ -24,3 +24,8 @@ def contact(request):
 
 def blog(request):
     return render(request, 'portfolio/blog.html')
+
+
+
+def onepage(request):
+    return render(request, 'portfolio/onepage.html')

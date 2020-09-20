@@ -1,0 +1,53 @@
+{% extends "portfolio/base.html" %}
+{% load static %}
+
+
+{% block content%}
+
+<div class="container-fluid bg-dark" style=" height:600px; border-style:groove;  border-radius: 50px;">
+    <div class="container-fluid bg-dark" id="aboutAnchor" style=" height:600px; width: 600px;">
+        <h1 class="text-center" style="padding-top:250px; color:white">Hi, I am Archimedes</h1>
+        <h3 class="text-center" style="padding-top:20px; color:azure;">a <strong>web developer</strong></h3>
+    </div> 
+</div> 
+
+
+<div class="container-fluid" id="workAnchor" style="height: 900px; background-color: white;">
+    <div><h1 class="text-center text-color-red" style="padding: 70px;">
+        These are some of my projects</h1></div>
+     
+
+    <div class="card-deck">
+        <div class="card" style="background-color:white;">
+            <div class="col pl-5">
+            <img class="card-img-top" src="{% static "assets/img/coding.png"%}" alt="">
+        </div>
+        <div class="card-footer text-center bg-dark" style="font-size: x-large; font-style:oblique">
+            <a  href="{% static "https://archimedessena.github.io"%}">Coding School</a>
+        </div>
+    </div>
+
+    <div class="card" style="background-color:white;">
+        <div class="col">
+        <img class="card-img-top" src="{% static "assets/img/theroyalfamilyschool1.png"%}" alt="">
+    </div>
+    <div class="card-footer text-center bg-dark" style="font-size: x-large; font-style:oblique">
+        <a  href="{% static "https://theroyalfamilyschool.github.io"%}">The Royal Family School</a>
+    </div>
+</div>
+
+
+<div class="card" style="background-color: white;">
+    <div class="col">
+    <img class="card-img-top" src="{% static "assets/img/love.png"%}" alt="">
+</div>
+<div class="card-footer text-center bg-dark" style="font-size: x-large; font-style:oblique">
+        <a href="{% static "https://loveexperience.github.io"%}">Love Experience</a>
+</div>
+</div>
+</div>  
+
+
+
+
+{% endblock content%}

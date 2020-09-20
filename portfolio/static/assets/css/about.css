@@ -1,0 +1,14 @@
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+#me{
+    background-color: grey;
+}
+
+#pic{
+    float: left;
+}
+img{
+    float: right;
+}

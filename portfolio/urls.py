@@ -9,5 +9,6 @@ urlpatterns = [
     path('project/', views.project, name="project"),
     path('contact/', views.contact, name="contact"),
     path('blog/', views.blog, name="blog"),
+    path('onepage/', views.onepage, name="onepage"),
 
 ]
