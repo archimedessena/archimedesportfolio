@@ -1,63 +1,39 @@
 {% extends "portfolio/base.html" %}
 {% load static %}
+<style>
+   .card{
+       border: hidden;
+   }
 
-{% block projects %}
-<div class="container-fluid" id="workAnchor" style="height: 900px; background-color: white;">
-    <div><h1 class="text-center text-color-red" style="padding: 70px;">
-        These are some of my projects</h1></div>
-     
-    <div class="container-fluid row">
-        <div class="col-xs-8">
-    <div class="card-deck">
-        <div class="card" style="background-color:white;">
-            <div class="col pl-5">
-           <img class="card-img-top" src="{% static "assets/img/coding.png" %}" alt=""> 
-            </div>
-        <div class="card-footer text-center bg-dark" style="font-size: x-large; font-style:oblique">
-            <a  href="% static "https://archimedessena.github.io" %}">Coding School</a>
-        </div>
-    </div>
-    <div class="col-xs-4">
-        <h2>This is startup project a started sometime ago.</h2>
-    </div>
-</div>
-</div>
- 
-<div class="container-fluid row">
-<div class="col-xs-8">
-    <div class="card" style="background-color:white;">
-        <div class="col">
-        <img class="card-img-top" src="{% static "assets/img/theroyalfamilyschool1.png" %}" alt="">
-    </div>
-    <div class="card-footer text-center bg-dark" style="font-size: x-large; font-style:oblique">
-        <a  href="{% static "https://theroyalfamilyschool.github.io" %}">The Royal Family School</a>
-    </div>
+  
+</style>
 
-    <div class="col-xs-4">
-        <h2>The Royal Family Family School, approached me for a website and I did exactly what they want for them. And at the end of the day they are happy with my work.</h2>
-    </div>
+{% block content %}
+
+<div><h1 class="text-center grey-text" style="padding: 70px; font-style:oblique; font-weight:bolder">
+    MY PROJECTS</h1>
 </div>
 
+  <div class="container-fluid flex-container pb-5" style="display: flex; border-style:inset; padding-top: 50px;">
+
+    <div class="container ml-5">
+        <div class="card" style="background-color:white; width: 500px;">
+           <img class="card-img-top bg-light" class="img-responsive"  src="{% static "assets/img/coding.png" %}" alt=""> 
+        </div>    
+    </div>
+
+    <div class="container  bg-white pt-2" id="text"> <!-- look at me later, text not mobile friendly-->
+    <h1 class="pb-3 text-center" style="font-family:monospace; font-weight:bolder; font-style:oblique; font-size:50px;">Archimedes Coding School</h1>
+        <h2 class="text-center"style="font-family: aria-activedescendant;">This is a startup project I started sometime ago. This is site to help teach aspiring developers from my community, including the young ones from basic schools. This project just involve only the frontend and it is static for now...</h2>
+        <button class="btn  btn-inline btn-dark  ml-5" style="border-width: 5px;border-style: hidden;"><a style="font-size: 20px; color:white; width: 30px; font-family:Verdana, Geneva, Tahoma, sans-serif; font-style:italic" href="#">Take A Look</a></button>
+   </div>
 </div>
 
 
-<div class="row">
-<div class="col-xs-4">
-<div class="card" style="background-color: white;">
-    <div class="col">
-    <img class="card-img-top" src="{% static "assets/img/love.png" %}" alt="">
-</div>
-<div class="card-footer text-center bg-dark" style="font-size: x-large; font-style:oblique">
-        <a href="{% static "https://loveexperience.github.io" %}">Love Experience</a>
-</div>
-</div>
-</div> 
-</div>
-</div>
 
 
 
  
-{% endblock projects %} 
+{% endblock content %} 
 
 
